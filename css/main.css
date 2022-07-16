@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../../fonts/FuturaPT-Light.eot");
+  src: url("../../fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/FuturaPT-Light.woff") format("woff"), url("../../fonts/FuturaPT-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../../fonts/FuturaPT-Book.eot");
+  src: url("../../fonts/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("../../fonts/FuturaPT-Book.woff") format("woff"), url("../../fonts/FuturaPT-Book.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../../fonts/FuturaPT-Bold.eot");
+  src: url("../../fonts/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/FuturaPT-Bold.woff") format("woff"), url("../../fonts/FuturaPT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Futura PT";
+}
+
+::-moz-selection {
+  color: antiquewhite;
+  background: #000;
+}
+
+::selection {
+  color: antiquewhite;
+  background: #000;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  background: #b9b6b2;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 14px;
+  border: 3px solid #b9b6b2;
+  border-radius: 10px;
+  background: #161615;
+}
+
+.item {
+  transition: all 0.2s ease-in-out;
+}
+
+.item:hover {
+  background: #eee;
+}
+
+.item:active {
+  background: #aaa;
+}
+
+.link {
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: none;
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.header {
+  color: #333333;
+}
+
+.header__info {
+  background: #F9F8F8;
+}
+
+.header__info::before {
+  content: "";
+  width: 180px;
+  height: 100%;
+  display: block;
+  background: #000;
+}
+
+.header__info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  color: #333333;
+  margin-left: 180px;
+}
+
+.header__address::before {
+  content: "";
+  width: 14px;
+  height: 13px;
+  background: url(../../icons/home.svg) center/cover no-repeat;
+  margin-right: 8px;
+}
+
+.header__phones {
+  display: flex;
+  align-items: center;
+}
+
+.header__phones::before {
+  content: "";
+  width: 14px;
+  height: 13px;
+  background: url(../../icons/phone.svg) center/cover no-repeat;
+  margin-right: 8px;
+}
+
+.header__phone a {
+  display: block;
+  padding: 12px 0px;
+  padding-right: 11px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.header__phone:not(:first-child) a::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #FFBD54;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: block;
+}
+
+.header__times {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__times::before {
+  content: "";
+  width: 14px;
+  height: 13px;
+  background: url(../../icons/calenar.svg) center/cover no-repeat;
+  margin-right: 8px;
+}
+
+.header__time {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.header__time:not(:last-child) {
+  margin-right: 17px;
+}
+
+.header__menu {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  position: relative;
+  width: 177px;
+}
+
+.header__logo img {
+  position: absolute;
+  top: -45px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__item:first-child a::before {
+  content: "";
+  width: 24px;
+  height: 15px;
+  background: url(../../icons/fish.svg) center/cover no-repeat;
+  margin-right: 8px;
+}
+
+.header__item a {
+  padding: 20px 25px;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.header__question {
+  display: flex;
+  padding: 20px 5px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.header__question::before {
+  content: "";
+  width: 24px;
+  height: 15px;
+  background: url(../../icons/pet.svg) center/cover no-repeat;
+  margin-right: 8px;
+}
+
+.hi {
+  padding: 145px 0 240px 0;
+  background: url(../../img/animals.png) left bottom/auto no-repeat, url(../../img/bird.png) right bottom/auto no-repeat #F9F8F8;
+}
+
+.hi__wrapper {
+  padding-left: 48%;
+}
+
+.hi__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  margin-bottom: 30px;
+  color: #78C0DE;
+}
+
+.hi__title strong {
+  color: #333333;
+}
+
+.hi__descr {
+  width: 495px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  margin-bottom: 40px;
+}
+
+.hi__btn {
+  padding: 15px 47px;
+  background: #333333;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}

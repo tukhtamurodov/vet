@@ -1,0 +1,32 @@
+.item{
+   transition: all .2s ease-in-out;
+}
+.item:hover{
+background: #eee;
+}
+
+.item:active{
+   background: #aaa;
+}
+.link{
+   transition: all .2s ease-in-out;
+}
+.link:hover{
+   text-decoration: underline;
+}
+
+.link:active{
+text-decoration: none;
+}
+.btn{
+   transition: all .2s ease-in-out;
+   cursor: pointer;
+}
+.btn:hover{
+   opacity: 0.9;
+
+}
+.btn:active{
+   opacity: 0.5;
+
+}

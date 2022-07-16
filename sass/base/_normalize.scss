@@ -1,0 +1,30 @@
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+   color: inherit;
+   text-decoration: none;
+}
+.container{
+   max-width: 1310px;
+   margin: 0 auto;
+}
+body{
+   font-family: 'Futura PT';
+}
+
+::selection{
+   color: antiquewhite;
+   background: #000;
+}
+::-webkit-scrollbar{
+   width: 14px;
+   background: #b9b6b2;
+}
+::-webkit-scrollbar-thumb{
+   width: 14px;
+   border: 3px solid #b9b6b2;
+   border-radius: 10px;
+   background: #161615;
+}
